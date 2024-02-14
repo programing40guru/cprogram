@@ -12,6 +12,11 @@ int *larg(int *a,int *b){
 
 }
 
+int lol(int a,int b){
+if(a>b){return a;}
+else{return b;}
+}
+
 int main(){
 	int x=15,y=50;
 	printf("before swap value : x= %d y= %d\n",x,y); 
@@ -21,5 +26,10 @@ int main(){
 	int *ans;
 	ans= larg(&x,&y);
 	printf("large value is = %d",*ans);
+
+printf("\n---***new- mathod pointer function prin-----\n");
+int (*p)(int ,int);
+p= &lol;
+printf("--new -its return large number = %d",lol(7,8));
 
 }

@@ -3,8 +3,8 @@
 
 int fect(int no){
 
-	if(no==0){return 0;}
-	int n= no+fect(no -1);
+	if(no==0){return 1;}
+	int n= no*fect(no -1);
 	return n;
 
 }

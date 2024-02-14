@@ -2,7 +2,7 @@
 #include<string.h>
 struct student{
 
-	char name[30];
+	char name[100];
 	int roll;
 	float marks;
 
@@ -18,8 +18,8 @@ int main(){
 	for(int i=0;i<n;i++){
 
 		printf("enter name %d st student name = ",1+i);
-		gets(temp);
-		strcpy(var[i].name,temp);
+		gets(var[i].name);
+		//strcpy(var[i].name,temp);
 
 		printf("\n enter %d st roll no = ",1+i);
 		scanf("%d",&var[i].roll);
